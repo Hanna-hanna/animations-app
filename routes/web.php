@@ -16,7 +16,22 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
+    return Inertia::render('Entrance', [
+    ]);
+});
+
+Route::get('/cards', function () {
     return Inertia::render('CoolCardDeck', [
+    ]);
+});
+
+Route::get('/layer-card', function () {
+    return Inertia::render('LayerCard', [
+    ]);
+});
+
+Route::get('/perspective-card', function () {
+    return Inertia::render('PerspectiveCard', [
     ]);
 });
 
